@@ -1,0 +1,26 @@
+{
+  "name": "cypress-telnyx.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryzalis/cypress-telnyx.com.git"
+  },
+  "author": "Dmitry Maslo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryzalis/cypress-telnyx.com/issues"
+  },
+  "homepage": "https://github.com/Cryzalis/cypress-telnyx.com#readme",
+  "devDependencies": {
+    "cypress": "^10.9.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "cypress-react-router": "^2.0.1"
+  }
+}
