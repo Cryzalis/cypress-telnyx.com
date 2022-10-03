@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import MainPage from '../integration/pages/mainPage' 
 
-describe('Telnyx main page UI and link', () => {
+describe('Telnyx main page', () => {
     beforeEach(() => {
       MainPage.navigate()
     })

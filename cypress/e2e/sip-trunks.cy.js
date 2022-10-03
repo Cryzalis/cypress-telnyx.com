@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import SipTrunksPage from '../integration/pages/sipTrunksPage'
 import MainPage from '../integration/pages/mainPage'
-describe('Telnyx page', () => {
+describe('Telnyx page sip trunks', () => {
     beforeEach(() => {
       SipTrunksPage.navigate()
       //MainPage.closeModal()
