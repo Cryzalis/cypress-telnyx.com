@@ -2,7 +2,7 @@
 Tests on cypress for https://telnyx.com/
 
 ## Technology
-- [Cypress](https://docs.cypress.io/
+- [Cypress](https://docs.cypress.io/)
 
 ## Usage
 Install the npm package with the command:
