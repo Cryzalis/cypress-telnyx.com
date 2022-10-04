@@ -1,29 +1,16 @@
-class LoginPage{
-    navigate(){
-        cy.visit('https://portal.telnyx.com/')
-    }
-    inputEmail(){
-        return cy.get("form[aria-label='loginForm']  input[name='email']")
-    }
-    inputPassword(){
-        return cy.get("form[aria-label='loginForm']  input[name='password']")
-    }
-    buttonLogin(){
-        return cy.get("form[aria-label='loginForm']  button")
-    }
-    errorMessage(){
-        return cy.get("div[type='error'] div[type='error']")
-    }
-
+import Pages from './pages'
+const inputEmail = "form[aria-label='loginForm']  input[name='email']"
+const inputPassword = "form[aria-label='loginForm']  input[name='password']"
+const buttonLogin = "form[aria-label='loginForm']  button"
+const errorMessage = "div[type='error'] div[type='error']"
+class LoginPage extends Pages{
     login(email,password){
-        this.inputEmail().clear().type(email,{ force: true})
-        this.inputPassword().clear().type(password,{ force: true})
-        this.buttonLogin().click({ force: true})
+        cy.get(inputEmail).clear().type(email,{ force: true})
+        cy.get(inputPassword).clear().type(password,{ force: true})
+        cy.get(buttonLogin).click({ force: true})
     }
     checkError(){
-        this.errorMessage().should('be.visible')
+        cy.get(errorMessage).should('be.visible')
     }
-
-
 }
 module.exports = new LoginPage()

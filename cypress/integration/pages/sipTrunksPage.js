@@ -1,9 +1,8 @@
-class SipTrunksPage{
-    navigate(){
-        cy.visit('/products/sip-trunks')
-    }
+import Pages from './pages'
+const header = "main span strong";
+class SipTrunksPage extends Pages{
     header(){
-        return cy.get("main span strong")
+        return cy.get(header)
     }
     secondTab(){
         return cy.get("[role='tab']").eq(1)

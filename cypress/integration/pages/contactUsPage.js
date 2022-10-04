@@ -1,42 +1,30 @@
-class contactUs{
-    navigate(){
-        cy.visit('/contact-us')
-    }
+import Pages from './pages'
+const h1 = 'header h1';
+const inputName = '#FirstName';
+const inputLastName = '#LastName';
+const inputEmail = '#Email';
+const selectReason_for_Contact = '#Reason_for_Contact__c';
+const inputWebsite = '#Website';
+const buttonSubmit = 'form button';
+const alertMessage = "form [role='alert']";
+
+class contactUs extends Pages{
+    
     header(){
-        return cy.get("header h1")
-    }
-    inputName(){
-        return cy.get('#FirstName')
-    }
-    inputLastName(){
-        return cy.get('#LastName')
-    }
-    inputEmail(){
-        return cy.get('#Email')
-    }
-    selectReason_for_Contact__c(){
-        return cy.get('#Reason_for_Contact__c')
-    }
-    inputWebsite(){
-        return cy.get('#Website')
-    }
-    buttonSubmit(){
-        return cy.get('form button')
+        return cy.get(h1)
     }
     alertMessage(){
-        return cy.get("form [role='alert']")
+        return cy.get(alertMessage)
     }
     clickButtonSubmit(){
-        this.buttonSubmit().click()
+        cy.get(buttonSubmit).click()
     }
     typeToForm(name,lastname,email,site){
-        this.selectReason_for_Contact__c().select('Support')
-        this.inputName().type(name).should('have.value', name)
-        this.inputLastName().type(lastname).should('have.value', lastname)
-        this.inputEmail().type(email).should('have.value', email)
-        this.inputWebsite().type(site).should('have.value', site)
+        cy.get(selectReason_for_Contact).select('Support')
+        cy.get(inputName).type(name)
+        cy.get(inputLastName).type(lastname)
+        cy.get(inputEmail).type(email)
+        cy.get(inputWebsite).type(site)
     }
-    
-
 }
 module.exports = new contactUs()

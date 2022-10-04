@@ -3,7 +3,7 @@ import SolutionCustomerPage from '../integration/pages/solutionCustomerPage'
 import ContactUsPage from '../integration/pages/contactUsPage'
 describe('Customer Engagement Platforms Page', () => {
     beforeEach(() => {
-      SolutionCustomerPage.navigate()
+      SolutionCustomerPage.navigate('/solutions/customer-engagement-platforms')
       //MainPage.closeModal()
       })
     it('Check Header', () => {

@@ -3,8 +3,8 @@ import ContactUsPage from '../integration/pages/contactUsPage'
 import MainPage from '../integration/pages/mainPage'
 describe('Contact us page test form', () => {
     before(() => {
-      ContactUsPage.navigate()
-      MainPage.closeModal()
+      ContactUsPage.navigate('/contact-us')
+      ContactUsPage.closeModal()
       })
     it('Check empty form', () => {
       ContactUsPage.clickButtonSubmit()

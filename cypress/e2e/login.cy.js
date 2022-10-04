@@ -2,7 +2,7 @@
 import LoginPage from '../integration/pages/loginPage'
 describe('Telnyx login', () => {
     before(() => {
-        LoginPage.navigate()
+        LoginPage.navigate('https://portal.telnyx.com/')
     })
     it('Login with invalid data', () => {
       LoginPage.login('dmytromaslo@gmail.com','123456789!Pp!')

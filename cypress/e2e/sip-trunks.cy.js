@@ -3,7 +3,7 @@ import SipTrunksPage from '../integration/pages/sipTrunksPage'
 import MainPage from '../integration/pages/mainPage'
 describe('Telnyx page sip trunks', () => {
     beforeEach(() => {
-      SipTrunksPage.navigate()
+      SipTrunksPage.navigate('/products/sip-trunks')
       //MainPage.closeModal()
       })
     it('Check Header', () => {
