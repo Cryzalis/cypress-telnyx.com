@@ -8,6 +8,7 @@ Several automatic tests on Cypress(JavaScript) for the site: [telnyx.com](https:
 - [Test structure](#test-structure)
 - [POM file structure](#pom-file-structure)
 - [Testing](#Testing)
+- [Result](#Result)
 - [To do](#to-do)
 
 ### Technology
