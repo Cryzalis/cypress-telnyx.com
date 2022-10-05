@@ -12,5 +12,5 @@ describe('Telnyx login', () => {
       LoginPage.login('dmytromaslo@gmail.com','123456789!Pp')
       cy.url({timeout: 15000}).should('include','portal.telnyx.com/#/app/');
     })
-  })
+})
   

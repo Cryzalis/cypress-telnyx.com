@@ -60,7 +60,7 @@ describe('Telnyx login', () => {//Title block of tests
 })
 ```
 ### POM file structure
-Page Object Model (POM) is a design pattern, popularly used in test automation that creates Object Repository for web UI elements. The advantage of the model is that it reduces code duplication and improves test maintenance. Example below
+Page Object Model (POM) is a design pattern, popularly used in test automation that creates Object Repository for web UI elements. The advantage of the model is that it reduces code duplication and improves test maintenance. Example below, for details use the [official documentation](https://docs.cypress.io/guides/end-to-end-testing/protractor-to-cypress#Cypress-with-Page-Objects)
 ```js
 const inputPassword = "form[aria-label='loginForm']  input[name='password']"//CSS locators
 const buttonLogin = "form[aria-label='loginForm']  button"
@@ -85,6 +85,9 @@ To open the cypress graphic interface
 ```
 npm run cypress
 ```
+### Result
+After completion of work you should see something like this
+![cypress result](https://github.com/Cryzalis/cypress-telnyx.com/blob/dev/cypress-result.png)
 ### To Do
 :white_large_square: write a normal readme
 
