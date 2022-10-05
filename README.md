@@ -1,11 +1,12 @@
 # cypress-telnyx.com
 Several automatic tests on Cypress(JavaScript) for the site: [telnyx.com](https://telnyx.com/). It check ability to log in, and few another pages.
-### Сontent
+### Contents
 - [Technology](#Technology)
 - [Usage](#Usage)
 - [Requirements](#Requirements)
 - [File structure](#file-structure)
 - [Test structure](#test-structure)
+- [POM file structure](#pom-file-structure)
 - [Testing](#Testing)
 - [To do](#to-do)
 
@@ -57,6 +58,23 @@ describe('Telnyx login', () => {//Title block of tests
       LoginPage.checkError()
     })
 })
+```
+### POM file structure
+Page Object Model (POM) is a design pattern, popularly used in test automation that creates Object Repository for web UI elements. The advantage of the model is that it reduces code duplication and improves test maintenance. Example below
+```js
+const inputPassword = "form[aria-label='loginForm']  input[name='password']"//CSS locators
+const buttonLogin = "form[aria-label='loginForm']  button"
+const errorMessage = "div[type='error'] div[type='error']"
+class LoginPage extends Pages{//Сlass title is the same as the page 
+    login(email,password){//Method Title, some parameters 
+        cy.get(inputEmail).clear().type(email,{ force: true})//directly logic of test
+        cy.get(inputPassword).clear().type(password,{ force: true})
+        cy.get(buttonLogin).click({ force: true})
+    }
+    checkError(){
+        cy.get(errorMessage).should('be.visible')
+    }
+}
 ```
 ### Testing
 To run tests in the headless mod in the root directory, execute
