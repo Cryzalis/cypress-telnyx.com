@@ -4,8 +4,9 @@ Several automatic tests on Cypress(JavaScript) for the site: [telnyx.com](https:
 - [Technology](#Technology)
 - [Usage](#Usage)
 - [Requirements](#Requirements)
-- [File structure](#File-structure)
+- [File structure](#file-structure)
 - [Testing](#Testing)
+- [To do](#to-do)
 ### Technology
 - [Cypress](https://docs.cypress.io/)
 
@@ -21,7 +22,7 @@ $ npm install
 ### Requirements
  :exclamation: To install and run the project, you need [NodeJS](https://nodejs.org/) v14+.
 
-### File_structure
+### File structure
 - cypress   
     - downloads   
     - e2e 
@@ -56,3 +57,7 @@ To open the cypress graphic interface
 ```
 npm run cypress
 ```
+### To Do
+:white_large_square: write a normal readme
+
+:white_large_square: rewrite everything
