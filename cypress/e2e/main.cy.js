@@ -7,8 +7,12 @@ describe('Telnyx main page', () => {
     })
     it('Check list of products', () => {
       MainPage.closeModal()
-      MainPage.checkProducts()
+      MainPage.getProducts()
+        .each(($el) => {
+          cy.wrap($el).find('h3').should('be.visible')
+          cy.wrap($el).find('div+p').should('be.visible')
+          cy.wrap($el).find('a').should('have.attr','href')
+        })
     })
-
-  })
+})
   

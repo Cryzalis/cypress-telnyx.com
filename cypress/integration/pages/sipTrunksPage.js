@@ -1,25 +1,20 @@
 import Pages from './pages'
 const header = "main span strong";
+const tabs = "[role='tab']";
+const tabPanelText = "[role='tabpanel']:nth-child(3) p";
 class SipTrunksPage extends Pages{
     header(){
         return cy.get(header)
     }
-    secondTab(){
-        return cy.get("[role='tab']").eq(1)
-    }
     textAfterTabs(){
-        return this.secondTab().parent().parent().next().next().find('p')
+        return cy.get(tabPanelText);
     }
     blockNetwork(){
         return cy.get("main ul li img").parents('li')
     }
-    
     clickToSecondTab(){
-        this.secondTab().click({force: true})
+        cy.scrollTo(0, 1800)
+        cy.get(tabs).eq(1).click({force: true})
     }
-
-
-
-
 }
 module.exports = new SipTrunksPage()

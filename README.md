@@ -1,10 +1,15 @@
 # cypress-telnyx.com
-Tests on cypress for https://telnyx.com/
-
-## Technology
+Several automatic tests on Cypress(JavaScript) for the site: [telnyx.com/](https://telnyx.com/)
+### Сontent
+- [Technology](### Technology)
+- [Usage](### Usage)
+- [Requirements](### Requirements)
+- [File structure](### File structure)
+- [Testing](### Testing)
+### Technology
 - [Cypress](https://docs.cypress.io/)
 
-## Usage
+### Usage
 Install the npm package with the command:
 
 ```
@@ -12,9 +17,37 @@ $ npm install
 ```
 
 ### Requirements
-To install and run the project, you need [NodeJS](https://nodejs.org/) v14+.
+ :exclamation: To install and run the project, you need [NodeJS](https://nodejs.org/) v14+.
 
-## Testing
+### File structure
+> cypress   
+> > downloads   
+> > e2e 
+> > > contact-us.cy.js 
+> > > login.cy.js
+> > > main.cy.js
+> > > sip-trunks.cy.js
+> > > solution-customer.cy.js
+> > fixtures  
+> > integration  
+> > > pages
+> > > > contactUsPage.js
+> > > > loginPage.js
+> > > > mainPage.js
+> > > > pages.js
+> > > > sipTrunksPage.js
+> > > > solutionCustomerPage.js
+> > screenshots  
+> > support  
+> > videos  
+ 
+
+### Testing
+To run tests in the headless mod in the root directory, execute
 ```
 npm run test
+```
+To open the cypress graphic interface
+```
+npm run cypress
 ```
