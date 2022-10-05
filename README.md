@@ -1,11 +1,10 @@
 # cypress-telnyx.com
 Several automatic tests on Cypress(JavaScript) for the site: [telnyx.com/](https://telnyx.com/)
 ### Сontent
-- [Technology](### Technology)
-- [Usage](### Usage)
-- [Requirements](### Requirements)
-- [File structure](### File structure)
-- [Testing](### Testing)
+- [Technology](###Technology)
+- [Usage](###Usage)
+- [Requirements](###Requirements)
+- [Testing](###Testing)
 ### Technology
 - [Cypress](https://docs.cypress.io/)
 
@@ -19,28 +18,6 @@ $ npm install
 ### Requirements
  :exclamation: To install and run the project, you need [NodeJS](https://nodejs.org/) v14+.
 
-### File structure
-> cypress   
-> > downloads   
-> > e2e 
-> > > contact-us.cy.js 
-> > > login.cy.js
-> > > main.cy.js
-> > > sip-trunks.cy.js
-> > > solution-customer.cy.js
-> > fixtures  
-> > integration  
-> > > pages
-> > > > contactUsPage.js
-> > > > loginPage.js
-> > > > mainPage.js
-> > > > pages.js
-> > > > sipTrunksPage.js
-> > > > solutionCustomerPage.js
-> > screenshots  
-> > support  
-> > videos  
- 
 
 ### Testing
 To run tests in the headless mod in the root directory, execute
