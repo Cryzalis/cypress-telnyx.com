@@ -1,11 +1,11 @@
 # cypress-telnyx.com
 Several automatic tests on Cypress(JavaScript) for the site: [telnyx.com](https://telnyx.com/)
 ### Сontent
-- [Technology](Technology)
-- [Usage](Usage)
-- [Requirements](Requirements)
-- [File structure](File_structure)
-- [Testing](Testing)
+- [Technology](#Technology)
+- [Usage](#Usage)
+- [Requirements](#Requirements)
+- [File structure](#File-structure)
+- [Testing](#Testing)
 ### Technology
 - [Cypress](https://docs.cypress.io/)
 
