@@ -90,6 +90,6 @@ npm run cypress
 After completion of work you should see something like this
 ![cypress result](https://github.com/Cryzalis/cypress-telnyx.com/blob/dev/cypress-result.png)
 ### To Do
-:white_large_square: write a normal readme
+:heavy_check_mark: write a normal readme
 
 :white_large_square: rewrite everything
